@@ -4,7 +4,8 @@
   "info": {
     "singularName": "data",
     "pluralName": "datas",
-    "displayName": "Data"
+    "displayName": "Data",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,20 @@
     },
     "Email": {
       "type": "email"
+    },
+    "Password": {
+      "type": "password",
+      "required": true
+    },
+    "upload": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

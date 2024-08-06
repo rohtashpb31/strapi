@@ -1,24 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "oks",
+  "collectionName": "products",
   "info": {
-    "singularName": "ok",
-    "pluralName": "oks",
-    "displayName": "ok",
-    "description": ""
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product "
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "product": {
       "type": "string"
     },
-    "Email": {
-      "type": "email"
-    },
-    "upload": {
+    "image": {
       "allowedTypes": [
         "images",
         "files",
@@ -26,7 +22,10 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true
+    },
+    "price": {
+      "type": "boolean"
     }
   }
 }
